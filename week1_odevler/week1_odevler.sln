@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeApplicationwithVariablesTC_week1", "PracticeApplicationwithVariables_week1\PracticeApplicationwithVariablesTC_week1.csproj", "{E70A315B-2F89-4375-93C3-5A36C5E66B35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeIfElse_week1", "PracticeIfElse_week1\PracticeIfElse_week1.csproj", "{C18232C0-5B94-4624-B280-756C4C9E3E20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeMarketIfElseSwitchCase_week1", "PracticeMarketIfElseSwitchCase_week1\PracticeMarketIfElseSwitchCase_week1.csproj", "{C810CBBA-9308-461B-9A51-E755F933C490}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "selintascohort_week1", "selintascohort\selintascohort_week1.csproj", "{CD27342A-A035-4902-8C38-75C3EEBCD696}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhoWantstoBeaMillionaire_week1", "WhoWantstoBeaMillionaire_week1\WhoWantstoBeaMillionaire_week1.csproj", "{C305A5FB-C4B4-4B54-9E0A-3730E7703CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E70A315B-2F89-4375-93C3-5A36C5E66B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70A315B-2F89-4375-93C3-5A36C5E66B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70A315B-2F89-4375-93C3-5A36C5E66B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70A315B-2F89-4375-93C3-5A36C5E66B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C18232C0-5B94-4624-B280-756C4C9E3E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C18232C0-5B94-4624-B280-756C4C9E3E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C18232C0-5B94-4624-B280-756C4C9E3E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C18232C0-5B94-4624-B280-756C4C9E3E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C810CBBA-9308-461B-9A51-E755F933C490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C810CBBA-9308-461B-9A51-E755F933C490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C810CBBA-9308-461B-9A51-E755F933C490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C810CBBA-9308-461B-9A51-E755F933C490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD27342A-A035-4902-8C38-75C3EEBCD696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD27342A-A035-4902-8C38-75C3EEBCD696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD27342A-A035-4902-8C38-75C3EEBCD696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD27342A-A035-4902-8C38-75C3EEBCD696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C305A5FB-C4B4-4B54-9E0A-3730E7703CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C305A5FB-C4B4-4B54-9E0A-3730E7703CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C305A5FB-C4B4-4B54-9E0A-3730E7703CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C305A5FB-C4B4-4B54-9E0A-3730E7703CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FE4B2CF-29E0-4308-9ACB-AF85CD1AEC9A}
+	EndGlobalSection
+EndGlobal

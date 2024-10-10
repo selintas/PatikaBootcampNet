@@ -62,5 +62,6 @@ Console.WriteLine(); //satır boşluk bırak
 Console.WriteLine("1 ile 120 arasındaki tek sayıların toplamı: " + tekToplam);
 Console.WriteLine("1 ile 120 arasındaki çift sayıların toplamı: " + ciftToplam);
 
-#endregion
+#endregion 
+
 Console.ReadKey();

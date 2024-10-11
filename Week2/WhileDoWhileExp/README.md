@@ -23,3 +23,5 @@
 - Koşul, döngü bir kez çalıştıktan sonra **kontrol edilir**.
 - Bu, koşul başlangıçta doğru veya yanlış olsa da döngünün **en az bir kez çalışmasını** garanti eder.
 - **Örnek**: Kullanıcı limit olarak negatif bir değer girse bile, döngü bir kez çalışır ve sonra durur.
+
+![Screenshot (119)](https://github.com/user-attachments/assets/14c42558-ed90-4208-abec-49b063e8126c)

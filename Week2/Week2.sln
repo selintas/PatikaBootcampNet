@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonsuzDonguVeKacıslar", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterasyonAtlama", "HA2aSorular\IterasyonAtlama\IterasyonAtlama\IterasyonAtlama.csproj", "{ECFE66DE-41DC-4179-935C-4F6EBD3602C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForSonsuz", "HA2aSorular\ForSonsuz\ForSonsuz\ForSonsuz.csproj", "{828F89E1-7A0B-4AEB-ACEC-632BBC507D09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{ECFE66DE-41DC-4179-935C-4F6EBD3602C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECFE66DE-41DC-4179-935C-4F6EBD3602C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECFE66DE-41DC-4179-935C-4F6EBD3602C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828F89E1-7A0B-4AEB-ACEC-632BBC507D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828F89E1-7A0B-4AEB-ACEC-632BBC507D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828F89E1-7A0B-4AEB-ACEC-632BBC507D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828F89E1-7A0B-4AEB-ACEC-632BBC507D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{2D6C30F2-A98C-455B-B5FD-19D90C4F53F4} = {13A07EC4-6529-45D7-B636-4AA32ED424A6}
 		{17B4FDDA-3BF7-42FD-B301-B170D7CCF131} = {13A07EC4-6529-45D7-B636-4AA32ED424A6}
 		{ECFE66DE-41DC-4179-935C-4F6EBD3602C3} = {13A07EC4-6529-45D7-B636-4AA32ED424A6}
+		{828F89E1-7A0B-4AEB-ACEC-632BBC507D09} = {13A07EC4-6529-45D7-B636-4AA32ED424A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F96F3172-2B2A-41DC-8B8A-548D29472188}

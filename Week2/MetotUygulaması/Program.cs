@@ -67,7 +67,7 @@ class Program
     static int GetRandomNumberRemainder()
     {
         Random random = new Random(); // Random sınıfından bir örnek oluştur
-        int randomNumber = random.Next(); // Rastgele bir sayı üret (0'dan int.MaxValue'a kadar)
+        int randomNumber = random.Next(1, 10); // Rastgele bir sayı üret (0'dan int.MaxValue'a kadar)
 
         // 2'ye bölümünden kalanı hesapla
         int remainder = randomNumber % 2;

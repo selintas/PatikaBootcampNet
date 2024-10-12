@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForSonsuz", "HA2aSorular\Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YolArkadasi", "YolArkadasi\YolArkadasi.csproj", "{AB12E76A-3676-4794-B9D3-DA322E70E874}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetotUygulaması", "MetotUygulaması\MetotUygulaması.csproj", "{861BC7BA-E92A-4579-A2C2-9455BC2E6AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{AB12E76A-3676-4794-B9D3-DA322E70E874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB12E76A-3676-4794-B9D3-DA322E70E874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB12E76A-3676-4794-B9D3-DA322E70E874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861BC7BA-E92A-4579-A2C2-9455BC2E6AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861BC7BA-E92A-4579-A2C2-9455BC2E6AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861BC7BA-E92A-4579-A2C2-9455BC2E6AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861BC7BA-E92A-4579-A2C2-9455BC2E6AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

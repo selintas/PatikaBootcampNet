@@ -1,16 +1,21 @@
 ﻿// week3 - 3 seceneklı oyun  
+
+
 Console.WriteLine("Proje haftasına hoş geldiniz! Hangi programı çalıştırmak istersiniz?");
 
-while (true)
+string secim;
+
+do
 {
-    Console.WriteLine("\nAşağıdaki seçeneklerden birini seçin:");
+    // Seçenekler
+    Console.WriteLine("\nAşağıdaki seçeneklerden birini seçin(1, 2, 3):");
     Console.WriteLine("1 - Rastgele Sayı Bulma Oyunu");
     Console.WriteLine("2 - Hesap Makinesi");
     Console.WriteLine("3 - Ortalama Hesaplama");
-    
 
-    string secim = Console.ReadLine();
+    secim = Console.ReadLine();
 
+    // Seçimi kontrol et ve uygun işlemi çağır
     switch (secim)
     {
         case "1":
@@ -24,10 +29,13 @@ while (true)
             break;
         default:
             Console.WriteLine("Geçersiz bir seçim yaptınız. Lütfen tekrar deneyin.");
-            break;
+            break; // Geçersiz seçim durumunda döngü devam eder
     }
 
-    void RastgeleSayiBulmaOyunu()
+} while (true); // Herhangi bir geçersiz işlem yapıldığında döngü devam eder
+
+
+void RastgeleSayiBulmaOyunu()
     {
         // Rastgele Sayı Bulma Oyunu
 
@@ -219,9 +227,9 @@ while (true)
 
         Console.WriteLine($"Harf Notunuz: {harfNotu}");
 
-        Console.ReadKey();
+        
     }
-}
+    Console.ReadKey();
 
 
     

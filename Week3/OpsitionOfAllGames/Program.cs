@@ -1,19 +1,30 @@
 ﻿// week3 - 3 seceneklı oyun  
 
-
-Console.WriteLine("Proje haftasına hoş geldiniz! Hangi programı çalıştırmak istersiniz?");
-
-string secim;
+Console.WriteLine("Hoşgeldiniz! Hangi programı çalıştırmak istersiniz? ÜÇ farklı seçenek sunuyoruz?");
+#region Seçenekler 1, 2, 3
 
 do
 {
+    string secim;
+
     // Seçenekler
     Console.WriteLine("\nAşağıdaki seçeneklerden birini seçin(1, 2, 3):");
     Console.WriteLine("1 - Rastgele Sayı Bulma Oyunu");
     Console.WriteLine("2 - Hesap Makinesi");
     Console.WriteLine("3 - Ortalama Hesaplama");
+    Console.WriteLine("q - Programdan çıkış");
 
-    secim = Console.ReadLine();
+    secim = Console.ReadLine().ToLower().Trim(); // boşluklar için trim, q için ToLower kullanıldı.
+
+    // Kullanıcının girdiği seçimi yazdır
+    Console.WriteLine($"Yaptığınız seçim: {secim}");
+
+    // q tuşuna basarsa döngüden çık
+    if (secim == "q")
+    {
+        Console.WriteLine("Programdan çıkılıyor...");
+        break; // Döngüyü sonlandırır ve program biter. 
+    }
 
     // Seçimi kontrol et ve uygun işlemi çağır
     switch (secim)
@@ -29,80 +40,76 @@ do
             break;
         default:
             Console.WriteLine("Geçersiz bir seçim yaptınız. Lütfen tekrar deneyin.");
-            break; // Geçersiz seçim durumunda döngü devam eder
+            break;
     }
 
 } while (true); // Herhangi bir geçersiz işlem yapıldığında döngü devam eder
-
-
+#endregion
+#region Rastgele Sayı Bulma Oyunu
 void RastgeleSayiBulmaOyunu()
+{
+    //1. Rastgele bir sayı üretip , ekrana yazarız.
+    Random rnd = new Random();
+    int sayi = rnd.Next(1, 101); // 1-100 arasında
+
+    //Console.WriteLine("1-100 aralığında rastgele bir sayı(bu hocaya ve bana göstermek için): " + sayi); // bu random sayıyı ekrana yazdırır.
+
+    int cevap;
+    bool geçerliGiris;
+    int tahminHakki = 5; // kullanıcının 5 canı var.
+
+    //Kullanıcıya oyunu açıklıyor 
+    Console.WriteLine("Rastgele sayı bulma oyununa hoşgeldiniz! Ben rastgele bir sayı belirledim.Hadi sayıyı tahmin etmeye çalış! 1 ile 100 arasında olsun. ");
+
+    // Kullanıcının 5 hakkı olduğu için tahmin döngüsünü başlatıyoruz
+    while (tahminHakki > 0)
     {
-        // Rastgele Sayı Bulma Oyunu
 
-        //1. Rastgele bir sayı üretip , ekrana yazarız.
-        Random rnd = new Random();
-        int sayi = rnd.Next(1, 101); // 1-100 arasında
-
-        Console.WriteLine("1-100 aralığında rastgele bir sayı(bu hocaya ve bana göstermek için): " + sayi); // bu random sayıyı ekrana yazdırır.
-
-
-        int cevap;
-        bool geçerliGiris;
-        int tahminHakki = 5; // kullanıcının 5 canı var.
-
-        //Kullanıcıya oyunu açıklıyor 
-        Console.WriteLine("Ben rastgele bir sayı belirledim.Hadi sayıyı tahmin etmeye çalış! 1 ile 100 arasında olsun. ");
-
-        // Kullanıcının 5 hakkı olduğu için tahmin döngüsünü başlatıyoruz
-        while (tahminHakki > 0)
+        do //bir kere kullanıcıdan değer alıcaz do kullandım.
         {
+            Console.WriteLine("Lütfen sayıyı tahmin ediniz: "); // Kullanıcıdan sayı tahmini alır
+            string kullanıcıTahmin = Console.ReadLine();
 
-            do //bir kere kullanıdan değer alıcaz do kullandım.
+            // Kullanıcı geçerli bir giriş mi yaptı, kontrol ediyor. int bir değer olacak.
+            geçerliGiris = int.TryParse(kullanıcıTahmin, out cevap);
+
+            if (!geçerliGiris)
             {
-                Console.WriteLine("Lütfen sayıyı tahmin ediniz: "); // Kullanıcıdan sayı tahmini alır
-                string kullanıcıTahmin = Console.ReadLine();
+                Console.WriteLine("Geçersiz bir giriş yaptınız. Lütfen bir sayı giriniz.");
+            }
 
-                // Kullanıcı geçerli bir giriş mi yaptı, kontrol ediyor. int bir değer olacak.
-                geçerliGiris = int.TryParse(kullanıcıTahmin, out cevap);
+        } while (!geçerliGiris); // geçerli giriş yapılmadıkça tekrar sorar
 
-                if (!geçerliGiris)
-                {
-                    Console.WriteLine("Geçersiz bir giriş yaptınız. Lütfen bir sayı giriniz.");
-                }
+        // Tahmini kontrol et
+        if (cevap == sayi)
+        {
+            Console.WriteLine("Tebrikler! Doğru cevap :) ");
+            break; // Doğru tahmin yapıldıysa döngüden çık
+        }
+        else
+        {
+            tahminHakki--; // Her yanlış tahminde hak 1 azalır ve gösteriyor.
+            Console.WriteLine("Yanlış cevap. Kalan tahmin hakkınız: " + tahminHakki);
 
-            } while (!geçerliGiris); // geçerli giriş yapılmadıkça tekrar sorar
-
-            // Tahmini kontrol et
-            if (cevap == sayi)
+            if (tahminHakki == 0)
             {
-                Console.WriteLine("Tebrikler! Doğru cevap :) ");
-                break; // Doğru tahmin yapıldıysa döngüden çık
+                Console.WriteLine($"Tahmin hakkınız bitti. Doğru cevap {sayi} idi.");
+            }
+            else if (cevap < sayi)
+            {
+                Console.WriteLine("Daha büyük bir sayı girin.");
             }
             else
             {
-                tahminHakki--; // Her yanlış tahminde hak 1 azalır ve gösteriyor.
-                Console.WriteLine("Yanlış cevap. Kalan tahmin hakkınız: " + tahminHakki);
-
-                if (tahminHakki == 0)
-                {
-                    Console.WriteLine($"Tahmin hakkınız bitti. Doğru cevap {sayi} idi.");
-                }
-                else if (cevap < sayi)
-                {
-                    Console.WriteLine("Daha büyük bir sayı girin.");
-                }
-                else
-                {
-                    Console.WriteLine("Daha küçük bir sayı girin.");
-                }
-
+                Console.WriteLine("Daha küçük bir sayı girin.");
             }
+
         }
     }
-    void HesapMakinesi()
+} 
+#endregion
+void HesapMakinesi()
     {
-        // hesap makınesı
-
         int sayi1, sayi2;
         bool cevap1, cevap2;
         string islem;

@@ -9,8 +9,8 @@ while (cevap.ToLower() != "ankara") // cevap ynalış oldukca devam eet ankara o
 {
     Console.WriteLine("Yanlış cevap :( Tekrar deneyiniz!"); 
 
-    Console.Write("cevap: "); 
-    cevap = Console.ReadLine();
+    Console.Write("cevap: " + cevap); 
+    //cevap = Console.ReadLine(); --> bunun yerine + cevap yazdım.
 }
 Console.WriteLine("Tebrikler! Doğru cevap :) ");
 Console.ReadKey();

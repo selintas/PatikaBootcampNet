@@ -5,13 +5,21 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "odev1", "odev1\odev1.csproj", "{7109D440-5DF5-4E7A-8DAC-49FDD081BDAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesandObjects", "ClassesandObjects\ClassesandObjects.csproj", "{CBC581EE-5009-45A4-AAC8-EE4F1E6EDF65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesandObjects", "ClassesandObjects\ClassesandObjects.csproj", "{CBC581EE-5009-45A4-AAC8-EE4F1E6EDF65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{137223F6-CCB6-4D86-BC38-CA171D3A0F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{137223F6-CCB6-4D86-BC38-CA171D3A0F20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesFieldsMethods", "PropertiesFieldsMethods\PropertiesFieldsMethods.csproj", "{DB7E24FC-AB18-4B07-9E1F-8BE04533899B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertiesFieldsMethods", "PropertiesFieldsMethods\PropertiesFieldsMethods.csproj", "{DB7E24FC-AB18-4B07-9E1F-8BE04533899B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice1Week4", "Practice1Week4\Practice1Week4.csproj", "{555CB781-E6C6-44BB-9654-22272B296BCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice1Week4", "Practice1Week4\Practice1Week4.csproj", "{555CB781-E6C6-44BB-9654-22272B296BCE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropsFieldsMethodsVideoPractice", "PropsFieldsMethodsVideoPractice\PropsFieldsMethodsVideoPractice.csproj", "{794CEA21-CB3C-4814-9698-9A3B39D9FDC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropsFieldsMethodsVideoPractise2", "PropsFieldsMethodsVideoPractise2\PropsFieldsMethodsVideoPractise2.csproj", "{E215E898-680F-4154-8714-541E987B5A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructorsV", "ConstructorsV\ConstructorsV.csproj", "{4C9B2741-FDB3-44F9-ADCE-6FE6C79EA32B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraticeConstructor2", "PraticeConstructor2\PraticeConstructor2.csproj", "{28424006-E507-416D-831F-D49AB1F512C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{555CB781-E6C6-44BB-9654-22272B296BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555CB781-E6C6-44BB-9654-22272B296BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{555CB781-E6C6-44BB-9654-22272B296BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{794CEA21-CB3C-4814-9698-9A3B39D9FDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{794CEA21-CB3C-4814-9698-9A3B39D9FDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{794CEA21-CB3C-4814-9698-9A3B39D9FDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{794CEA21-CB3C-4814-9698-9A3B39D9FDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E215E898-680F-4154-8714-541E987B5A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E215E898-680F-4154-8714-541E987B5A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E215E898-680F-4154-8714-541E987B5A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E215E898-680F-4154-8714-541E987B5A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C9B2741-FDB3-44F9-ADCE-6FE6C79EA32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9B2741-FDB3-44F9-ADCE-6FE6C79EA32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9B2741-FDB3-44F9-ADCE-6FE6C79EA32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9B2741-FDB3-44F9-ADCE-6FE6C79EA32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28424006-E507-416D-831F-D49AB1F512C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28424006-E507-416D-831F-D49AB1F512C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28424006-E507-416D-831F-D49AB1F512C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28424006-E507-416D-831F-D49AB1F512C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

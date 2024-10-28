@@ -20,13 +20,18 @@ namespace PraticeConstructor2
             Console.WriteLine("Ingaaaa");
         }
 
-        // 2. Constructor with Ad and Soyad parameters
-        public Bebek(string ad, string soyad)
+        // 2. Constructor with Ad and Soyad parameters 
+
+        //  public Bebek(string ad, string soyad) : this()  // this() ile default constructor çağrılabilir.
+
+        public Bebek(string ad, string soyad) : this()
         {
             Ad = ad;
             Soyad = soyad;
-            DogumTarihi = DateTime.Now;
-            Console.WriteLine("Ingaaaa");
+            //DogumTarihi = DateTime.Now;
+            //Console.WriteLine("Ingaaaa"); 
+
+            // : this() ile default ctor çağrıldı. kod tekrarı kaldırıldı.
         }
     }
 }

@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructorsV", "Constructo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraticeConstructor2", "PraticeConstructor2\PraticeConstructor2.csproj", "{28424006-E507-416D-831F-D49AB1F512C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static", "Static\Static.csproj", "{C5551E08-8275-4CA0-83C9-CE305B3309FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikPatikaKütüphane", "PratikPatikaKütüphane\PratikPatikaKütüphane.csproj", "{CE623D6F-F7A8-4C4C-8FD2-35558656970B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{28424006-E507-416D-831F-D49AB1F512C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28424006-E507-416D-831F-D49AB1F512C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28424006-E507-416D-831F-D49AB1F512C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5551E08-8275-4CA0-83C9-CE305B3309FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5551E08-8275-4CA0-83C9-CE305B3309FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5551E08-8275-4CA0-83C9-CE305B3309FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5551E08-8275-4CA0-83C9-CE305B3309FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE623D6F-F7A8-4C4C-8FD2-35558656970B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE623D6F-F7A8-4C4C-8FD2-35558656970B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE623D6F-F7A8-4C4C-8FD2-35558656970B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE623D6F-F7A8-4C4C-8FD2-35558656970B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

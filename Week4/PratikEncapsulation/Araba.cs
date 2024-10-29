@@ -30,8 +30,7 @@ namespace PratikEncapsulation
                 }
             }
         }
-        // Araba bilgilerini yazdıran metot
-        public void ArabaBilgileri()
+        public void ArabaBilgileri() // Araba bilgilerini yazdıran metot
         {
             Console.WriteLine($"Marka: {Marka}, Model: {Model}, Renk: {Renk}, Kapı Sayısı: {KapiSayisi}");
         }

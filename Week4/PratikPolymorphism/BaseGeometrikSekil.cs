@@ -19,12 +19,13 @@ namespace PratikPolymorphism
     }
 
     // Kare sınıfı - BaseGeometrikSekil sınıfından türetilmiş
-    public class Kare : BaseGeometrikSekil
+    class Kare : BaseGeometrikSekil
     {
-        // Alan hesaplama metodu - Genişlik * Yükseklik (Base class yöntemi ile aynı)
-        public override double AlanHesapla()
+        public void kareAlan()
         {
-            return Genislik * Yukseklik;
+            base.AlanHesapla();
+            
+
         }
     }
 

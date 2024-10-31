@@ -6,7 +6,7 @@ public class Program
     {
         // Kare nesnesi oluşturma ve alan hesaplama
         BaseGeometrikSekil kare = new Kare { Genislik = 5, Yukseklik = 5 };
-        Console.WriteLine($"Karenin Alanı: {kare.AlanHesapla()}");
+        Console.WriteLine("Karenin alanı: " + kare.AlanHesapla());
 
         // Dikdörtgen nesnesi oluşturma ve alan hesaplama
         BaseGeometrikSekil dikdortgen = new Dikdortgen { Genislik = 5, Yukseklik = 10 };

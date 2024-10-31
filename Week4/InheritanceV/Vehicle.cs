@@ -9,11 +9,11 @@ namespace InheritanceV
 {
     public abstract class Vehicle
     {
-        public virtual void Drive() // buclass ı mıras aldıgında değiştirerek kulllanabılırsın.
+        public virtual void Drive() // bu classtakı metodu bu class ı mıras aldıgında değiştirerek kulllanabılırsın.
         {
             Console.WriteLine("driving..");
         } 
-        public sealed class Car : Vehicle //car classı mıras alınamaz sealed yazılınca
+        public sealed class Car : Vehicle //car classından mıras alınamaz sealed yazılınca
         {
             public override void Drive()
             {
@@ -22,7 +22,7 @@ namespace InheritanceV
         }  
         public class Bus : Vehicle
         {
-            public sealed override void Drive()
+            public sealed override void Drive() //sealed metot muhurlendı.
             {
                 {
                     Console.WriteLine("bus");

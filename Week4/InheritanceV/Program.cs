@@ -15,5 +15,5 @@ public class Program
      
     Student student = new Student();
 
-    Person person = new Person();
+    //Person person = new Person(); abstract soyut new nesne turerılemez. miras alarak kullanılır.
 }

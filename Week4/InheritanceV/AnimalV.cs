@@ -31,7 +31,7 @@ namespace InheritanceV
     }
     public class Cat : Mammal  // Türetilmiş sınıf (derived class) - sadece bir sınıf bir sınıftan miras alır ama aldıklarını aktarır.
     {
-        public override void MakeSound()
+        public override void MakeSound() //mammal dakı abstract metodu orrıve ettık. ve meow yazdık.
         {
             Console.WriteLine("Meow");
         }

@@ -13,7 +13,7 @@ namespace PratikInheritance
         public string Ad {  get; set; }
         public string Soyad { get; set; }  
 
-        public void BilgiYazdir()
+        public virtual void BilgiYazdir()
         {
             Console.WriteLine($" Ad : {Ad}, Soyad : {Soyad}");
         }
@@ -25,9 +25,8 @@ public class Ogrenci : BaseKisi // BaseKisi clasından türerilmiş derived clas
 
     public void YazdirOgrenciBilgileri()
     {
-        // Base sınıfın metodu çağrılıyor
-        BilgiYazdir();
-        Console.WriteLine($"Öğrenci Numarası: {OgrenciNo}");
+        // Base sınıfın metodu çağrılıyor vırtual metot yazılacak değiştirildi.
+        Console.WriteLine($"Öğrenci Numarası: {OgrenciNo}, {Ad} {Soyad}");
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿ ## Pratik - Inheritance
+
 Bu örnekte sizlerden bir Base Sınıf oluşturmanız isteniyor. İsmi -> BaseKisi
 
 BaseKisi için propertyler -> Ad, Soyad

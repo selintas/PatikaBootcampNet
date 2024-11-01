@@ -15,7 +15,7 @@ namespace PratikAbstraction
         // Abstract metot: Görev
         public abstract void Gorev();
     }
-      // YazilimGelistirici sınıfı, Calisan sınıfından türetilmiştir
+     // YazilimGelistirici sınıfı, Calisan sınıfından türetilmiştir
     public class YazilimGelistirici : Calisan
     {
         public override void Gorev()

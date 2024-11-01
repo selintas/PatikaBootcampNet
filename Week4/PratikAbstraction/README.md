@@ -14,13 +14,18 @@ Hasan Çıldırmış şirketin Proje yönetcisi, kendisi üzerinden Gorev() abst
 " Proje yöneticisi olarak çalışıyorum. " yazdırılmasını istiyoruz. 
 
 ___
-Açıklama:
 
-Calisan (Çalışan) Abstract Sınıfı:
-Calisan sınıfı, her çalışan için ortak özellikleri (Ad, Soyad, Departman) içerir. Gorev() metodu soyut olarak tanımlanmıştır, yani bu metodu Calisan sınıfından türeyen her alt sınıf kendine özgü şekilde uygulamalıdır.
+# Açıklama:
 
-Alt Sınıflar (YazilimGelistirici, ProjeYoneticisi, SatisTemsilcisi):
+Calisan (Çalışan) Abstract Sınıfı: 
+
+1.Calisan sınıfı, her çalışan için ortak özellikleri (Ad, Soyad, Departman) içerir. Gorev() metodu soyut olarak tanımlanmıştır, yani bu metodu Calisan sınıfından türeyen her alt sınıf kendine özgü şekilde uygulamalıdır.
+
+2.Alt Sınıflar (YazilimGelistirici, ProjeYoneticisi, SatisTemsilcisi): 
+
 YazilimGelistirici, ProjeYoneticisi ve SatisTemsilcisi sınıfları Calisan sınıfını devralır ve Gorev() metodunu kendi ihtiyaçlarına göre uygular. Bu sayede her pozisyon, kendine uygun bir görev mesajını konsola yazdırır.
 
-Program Sınıfı ve Görev Çağrısı:
+3.Program Sınıfı ve Görev Çağrısı: 
+
 Main metodunda, her çalışandan birer nesne oluşturulur. Her nesneye Gorev() metodu çağrıldığında, her sınıfın kendine özgü Gorev() uygulaması çalışır ve farklı görev mesajları görüntülenir.
+

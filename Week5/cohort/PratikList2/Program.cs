@@ -21,16 +21,24 @@ class Program
 
         // Kahve listesini ekrana yazdır
         Console.WriteLine("\n----- KAHVE LİSTESİ -----");
-        for (int i = 0; i < kahveler.Count; i++)
+
+        // Girilen kahve isimlerini ekrana yazdırıyoruz
+        Console.WriteLine("\nGirilen Kahve İsimleri:");
+        foreach (string kahve in kahveler)
         {
-            Console.WriteLine($"{i + 1}. {kahveler[i]}");
-        }
+            Console.WriteLine($" {kahve}");
+        } // numarasız sadece ısımlerı lısteler.
+
+        //for (int i = 0; i < kahveler.Count; i++)
+        //{
+        //    Console.WriteLine($"{i + 1}. {kahveler[i]}");
+        //} numara ekleyerek
 
         //int numara = 1;
         //foreach (string kahve in kahveler)
         //{
         //    Console.WriteLine($"{numara}. {kahve}");
         //    numara++;
-        //}
+        //} numara ekleyerek
     }
 }

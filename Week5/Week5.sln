@@ -7,23 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cohort", "cohort", "{DB7619
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericMethodsV2", "cohort\GenericMethodsV2\GenericMethodsV2.csproj", "{6847471B-28B9-4DEA-A9AD-9B3B17AD8D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMethods", "cohort\GenericMethods\GenericMethods.csproj", "{CAF3B81E-137A-458A-BE61-D78601F26B35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericMethods", "cohort\GenericMethods\GenericMethods.csproj", "{CAF3B81E-137A-458A-BE61-D78601F26B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DizilerWeek2Repeat", "cohort\DizilerWeek2Repeat\DizilerWeek2Repeat.csproj", "{6DCA4D60-C59F-4AB4-91F1-55E81F464FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DizilerWeek2Repeat", "cohort\DizilerWeek2Repeat\DizilerWeek2Repeat.csproj", "{6DCA4D60-C59F-4AB4-91F1-55E81F464FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DizilerArraysWeek5", "cohort\DizilerArraysWeek5\DizilerArraysWeek5.csproj", "{CF997032-05CD-4459-9E27-06DA102424C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DizilerArraysWeek5", "cohort\DizilerArraysWeek5\DizilerArraysWeek5.csproj", "{CF997032-05CD-4459-9E27-06DA102424C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysV", "cohort\ArraysV\ArraysV.csproj", "{381AEE00-C99C-472E-8770-987FA5E5C67E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysV", "cohort\ArraysV\ArraysV.csproj", "{381AEE00-C99C-472E-8770-987FA5E5C67E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikArray", "cohort\PratikArray\PratikArray.csproj", "{21763BDE-C741-48A7-8AC4-D5C6E8237502}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikArray", "cohort\PratikArray\PratikArray.csproj", "{21763BDE-C741-48A7-8AC4-D5C6E8237502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListelerGenericLists", "cohort\ListelerGenericLists\ListelerGenericLists.csproj", "{5E3C0CC4-3A00-46C4-A815-6B8D63A477B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListelerGenericLists", "cohort\ListelerGenericLists\ListelerGenericLists.csproj", "{5E3C0CC4-3A00-46C4-A815-6B8D63A477B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListV", "cohort\ListV\ListV.csproj", "{4A20E5F9-3D01-486E-84CE-0C8EED2B562E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListV", "cohort\ListV\ListV.csproj", "{4A20E5F9-3D01-486E-84CE-0C8EED2B562E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLists1", "cohort\PratikLists1\PratikLists1.csproj", "{691AB6F9-CEB6-43E5-AA51-953175514997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikLists1", "cohort\PratikLists1\PratikLists1.csproj", "{691AB6F9-CEB6-43E5-AA51-953175514997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikList2", "cohort\PratikList2\PratikList2.csproj", "{5C49EE04-786A-459D-BB3D-F739103AC4BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikList2", "cohort\PratikList2\PratikList2.csproj", "{5C49EE04-786A-459D-BB3D-F739103AC4BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikIMDBList", "cohort\PratikIMDBList\PratikIMDBList.csproj", "{782985C5-0375-4AB3-A8FB-825B9BA19923}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{5C49EE04-786A-459D-BB3D-F739103AC4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C49EE04-786A-459D-BB3D-F739103AC4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C49EE04-786A-459D-BB3D-F739103AC4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782985C5-0375-4AB3-A8FB-825B9BA19923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782985C5-0375-4AB3-A8FB-825B9BA19923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782985C5-0375-4AB3-A8FB-825B9BA19923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782985C5-0375-4AB3-A8FB-825B9BA19923}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{4A20E5F9-3D01-486E-84CE-0C8EED2B562E} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 		{691AB6F9-CEB6-43E5-AA51-953175514997} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 		{5C49EE04-786A-459D-BB3D-F739103AC4BE} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
+		{782985C5-0375-4AB3-A8FB-825B9BA19923} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9453ECAA-C2BD-441F-B5E7-0558E1601E66}

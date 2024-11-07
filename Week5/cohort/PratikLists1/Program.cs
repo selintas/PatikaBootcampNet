@@ -30,12 +30,23 @@ class Program
 
         // Davetli listesini yazdır
         Console.WriteLine("\n------- DAVETLİLER LİSTESİ -------");
+        // davetlileri yazdırır.
 
-        int numara = 1;
-        foreach (string isim in davetliler)
+        //foreach (string isim in davetliler)
+        //{
+        //    Console.WriteLine(isim);
+        //}
+        // veya numara ekleyerek yazdırır.
+        //int numara = 1;
+        //foreach (string isim in davetliler)
+        //{
+        //    Console.WriteLine($"{numara}. {isim}");
+        //    numara++;
+        //}
+
+        for (int i = 0; i < davetliler.Count; i++) // cıktıya numara ekler.
         {
-            Console.WriteLine($"{numara}. {isim}");
-            numara++;
+            Console.WriteLine($"{i + 1}. {davetliler[i]}");
         }
     }
 }

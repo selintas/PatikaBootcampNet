@@ -21,9 +21,9 @@ class Program
     static void Main()
     {
         List<Film> filmler = new List<Film>(); // Film listesi oluşturma
-        bool devamEt = true; // Kullanıcı yanıtına göre döngüyü kontrol etmek için
+        //bool devamEt = true; // Kullanıcı yanıtına göre döngüyü kontrol etmek için
 
-        while (devamEt)
+        while (true)
         {
             // Kullanıcıdan film bilgilerini alma
             Console.Write("Film Adı: ");
@@ -31,7 +31,7 @@ class Program
 
             Console.Write("IMDb Puanı: ");
             double imdbPuani;
-            while (!double.TryParse(Console.ReadLine(), out imdbPuani))
+            while (!double.TryParse(Console.ReadLine(), out imdbPuani) || imdbPuani < 0 || imdbPuani > 10)
             {
                 Console.Write("Lütfen geçerli bir IMDb puanı girin: ");
             }
@@ -44,7 +44,7 @@ class Program
             string cevap = Console.ReadLine().ToLower();
             if (cevap != "evet")
             {
-                devamEt = false;
+               break;
             }
         }
 

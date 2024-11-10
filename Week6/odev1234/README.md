@@ -31,6 +31,8 @@ odev3
 4.film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
 
  odev4
+
+ 
 1.film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız. 
 
 2.film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?

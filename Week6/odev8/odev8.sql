@@ -1,14 +1,14 @@
 --SELECT * FROM employee; 
 
- --1.test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
---CREATE TABLE employee (
---    id SERIAL PRIMARY KEY, --PRIMARY KEY benzersız ıd verır.
---    name VARCHAR(50),
---    birthday DATE,
---    email VARCHAR(100)
---); 
+--1.test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+CREATE TABLE employee (
+    id SERIAL PRIMARY KEY, --PRIMARY KEY benzersız ıd verır.
+    name VARCHAR(50),
+    birthday DATE,
+    email VARCHAR(100)
+); 
 --2.Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
---SELECT * fROM employee;
+SELECT * fROM employee;
  
  --INSERT INTO employee (name, birtday, email)
  --VALUES 
@@ -76,30 +76,30 @@ insert into employee (name, email, birthday) values ('Nadège', 'rbaugham1d@book
 
 UPDATE employee
 SET
-    name = 'Elif',
-    birthday = '1990-11-12',
-    email = 'elifkara@gmail.com'
+name = 'Elif',
+birthday = '1990-11-12',
+email = 'elifkara@gmail.com'
 WHERE id = 3;
 
 UPDATE employee
 SET
-    name = 'Murat',
-    birthday = '1978-07-20',
-    email = 'muratcan@yahoo.com'
+name = 'Murat',
+birthday = '1978-07-20',
+email = 'muratcan@yahoo.com'
 WHERE id = 4;
 
 UPDATE employee
 SET
-    name = 'Zeynep',
-    birthday = '1992-02-27',
-    email = 'zeynepdemir@hotmail.com'
+name = 'Zeynep',
+birthday = '1992-02-27',
+email = 'zeynepdemir@hotmail.com'
 WHERE id = 5;
 
 UPDATE employee
 SET
-    name = 'Kemal',
-    birthday = '1988-09-30',
-    email = 'kemalcelik@gmail.com'
+name = 'Kemal',
+birthday = '1988-09-30',
+email = 'kemalcelik@gmail.com'
 WHERE id = 6;
 --4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 

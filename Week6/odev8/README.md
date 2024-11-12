@@ -9,4 +9,5 @@ odev 8
 4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
 
-![Screenshot (392)](https://github.com/user-attachments/assets/1be2d9f0-a5f0-4c52-ba9f-f4670f437474)
+
+![Screenshot (392)](https://github.com/user-attachments/assets/4cb2041b-cd7a-4de4-953f-c33e984e1502)

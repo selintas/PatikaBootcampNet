@@ -7,3 +7,6 @@ odev 8
 3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım. 
 
 4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+
+![Screenshot (392)](https://github.com/user-attachments/assets/1be2d9f0-a5f0-4c52-ba9f-f4670f437474)

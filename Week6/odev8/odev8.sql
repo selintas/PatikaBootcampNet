@@ -122,3 +122,5 @@ WHERE email = 'zeynepdemir@hotmail.com';
 -- 5. Belirli bir kritere göre silme (örneğin doğum tarihi 1990'dan önce olanları silme)
 DELETE FROM employee
 WHERE birthday < '1990-01-01';
+
+--odev 8 kodlar

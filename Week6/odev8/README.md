@@ -13,8 +13,8 @@ odev 8
 ![Screenshot (392)](https://github.com/user-attachments/assets/4cb2041b-cd7a-4de4-953f-c33e984e1502)
 
  --- 
-## Ödev 8 - SQL Komutları ve İşlemleri
- 
+
+Ödev 8 - SQL Komutları ve İşlemleri
 Bu ödev, SQL veritabanında employee tablosunu oluşturmaya, tablo üzerinde güncelleme (UPDATE), silme (DELETE) ve sorgulama işlemleri gerçekleştirmeye yönelik çeşitli komutları içermektedir.
 
 İçindekiler
@@ -25,8 +25,8 @@ Silme İşlemleri
 Tablo Oluşturma
 Aşağıdaki komut, employee adlı tabloyu oluşturur. Bu tabloda çalışanların id, name, birthday ve email bilgileri saklanır:
 
-
-
+sql
+Copy code
 CREATE TABLE employee (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50),
@@ -34,10 +34,10 @@ CREATE TABLE employee (
     email VARCHAR(100)
 );
 Güncelleme İşlemleri
-
 Tablodaki belirli kayıtları id sütununa göre güncelleyebilmek için 5 örnek UPDATE sorgusu:
 
-
+sql
+Copy code
 UPDATE employee
 SET
     name = 'Ahmet',
@@ -56,7 +56,6 @@ WHERE id = 3;
 Silme İşlemleri
 Aşağıdaki DELETE sorguları, employee tablosundaki belirli kayıtları silmek için kullanılmaktadır. Her sorgu farklı bir sütuna göre belirli koşulları sağlayan satırları siler:
 
-sql
 
 DELETE FROM employee WHERE id = 2;
 DELETE FROM employee WHERE name = 'Elif';
@@ -68,14 +67,12 @@ Tablodaki veriler üzerinde analiz yapmak ve bilgi almak için kullanılan bazı
 
 rating sütununa göre gruplama ve film sayısı:
 
-sql
 
 SELECT rating, COUNT(*) AS film_count
 FROM film
 GROUP BY rating;
 En fazla şehir sayısına sahip country_id bilgisi ve şehir sayısı:
 
-sql
 
 SELECT country_id, COUNT(*) AS city_count
 FROM city
@@ -84,12 +81,14 @@ ORDER BY city_count DESC
 LIMIT 1;
 Notlar
 SERIAL veri tipi, id sütununun otomatik olarak benzersiz değerlerle artmasını sağlar.
-
 Veritabanı işlemlerinin doğru şekilde yapılabilmesi için her UPDATE ve DELETE sorgusu belirli bir koşula (WHERE ifadesine) sahiptir.
-
 GROUP BY, ORDER BY, LIMIT, OFFSET gibi SQL ifadeleri verilerin analizinde önemlidir.
-
 Bu ödev, SQL üzerinde tablo oluşturma, güncelleme, silme ve veri analizini öğrenmeye yönelik olarak hazırlanmıştır.
+
+
+
+
+
 
 
 

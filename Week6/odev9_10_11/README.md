@@ -1,15 +1,45 @@
-### odev 9 
+Odev 9
+1. INNER JOIN for City and Country Tables
+To view the city and country names together, we can use the INNER JOIN between the city and country tables on their common column country_id.
 
-## 1.city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
-SELECT city.city_id, city.city, country.country, country.country_id FROM city
-INNER JOIN country ON city.country_id = country.country_id;
 
-## 2.customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
-SELECT payment.payment_id, customer.first_name, customer.last_name, customer.customer_id FROM payment
-INNER JOIN customer ON payment.customer_id = customer.customer_id;
+SELECT city.city_id, city.city, country.country, country.country_id 
+FROM city
+INNER JOIN country 
+ON city.country_id = country.country_id;
+This query retrieves:
 
-## 3.customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. 
-SELECT rental.rental_id, customer.first_name, customer.last_name, customer.customer_id FROM rental
-INNER JOIN customer ON rental.customer_id = customer.customer_id; 
+city_id from the city table
+city name from the city table
+country name from the country table
+country_id from the country table
+2. INNER JOIN for Customer and Payment Tables
+To view the payment_id along with the first and last names of customers, we use the INNER JOIN between the payment and customer tables on their common column customer_id.
 
- *** id bilgileri isterler harıcınde ektra yazıldı.
+
+
+SELECT payment.payment_id, customer.first_name, customer.last_name, customer.customer_id 
+FROM payment
+INNER JOIN customer 
+ON payment.customer_id = customer.customer_id;
+This query retrieves:
+
+payment_id from the payment table
+first_name and last_name from the customer table
+customer_id from the customer table
+3. INNER JOIN for Customer and Rental Tables
+To view the rental_id along with the first and last names of customers, we use the INNER JOIN between the rental and customer tables on their common column customer_id.
+
+
+SELECT rental.rental_id, customer.first_name, customer.last_name, customer.customer_id 
+FROM rental
+INNER JOIN customer 
+ON rental.customer_id = customer.customer_id;
+This query retrieves:
+
+rental_id from the rental table
+first_name and last_name from the customer table
+customer_id from the customer table
+
+
+Note: The id fields are included as part of the result, as the customer and payment/rental data cannot be fully linked without them

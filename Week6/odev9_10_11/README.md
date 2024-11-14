@@ -1,13 +1,24 @@
-### odev 9
+# SQL Ödevleri 9 10 11
 
-## 1.city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
-SELECT city.city_id, city.city, country.country, country.country_id FROM city
-INNER JOIN country ON city.country_id = country.country_id;
+Bu proje, SQL kullanarak farklı sorgular üzerinde çalıştığım ödev dosyalarını içermektedir. Projede, veritabanı tabloları arasında ilişkiler kurarak `JOIN` işlemleri gerçekleştirdim ve farklı tablo sorgularını oluşturdum.
 
-## 2.customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
-SELECT payment.payment_id, customer.first_name, customer.last_name, customer.customer_id FROM payment
-INNER JOIN customer ON payment.customer_id = customer.customer_id;
+## İçerik
 
-## 3.customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız. 
-SELECT rental.rental_id, customer.first_name, customer.last_name, customer.customer_id FROM rental
-INNER JOIN customer ON rental.customer_id = customer.customer_id;
+- **odev9.sql**: 
+  - `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` ve `FULL JOIN` gibi farklı `JOIN` türlerini kullanarak tabloları birleştirme sorguları içerir.
+  - `city` ve `country` tablolarında `INNER JOIN` ile şehir ve ülke isimlerinin birlikte gösterilmesi.
+  - `customer` ve `payment` tablolarında `RIGHT JOIN` kullanılarak ödeme ve müşteri isimlerinin eşleştirilmesi.
+  - `customer` ve `rental` tablolarında `FULL JOIN` ile kiralama ve müşteri isimlerinin eksiksiz gösterilmesi.
+
+- **odev11.sql**:
+  - `actor` ve `customer` tablolarındaki `first_name` sütunları üzerinde farklı sorgular içerir.
+  - Tüm `first_name` değerlerini birleştirip sıralama, yalnızca kesişen isimleri bulma ve bir tabloda olup diğerinde olmayan isimleri listeleme.
+  - Tekrar eden verilerin gösterilmesi veya hariç tutulması için `UNION`, `INTERSECT`, `EXCEPT` ve `UNION ALL` gibi SQL komutlarının kullanımı.
+
+## Kullanılan SQL Komutları
+
+- **JOIN İşlemleri**: `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN` kullanarak tablolar arası ilişki kurulması.
+- **Set Operatörleri**: `UNION`, `INTERSECT`, `EXCEPT` ile veri kümeleri üzerinde işlem yapılması.
+- **ORDER BY**: Sonuçların sıralanması için kullanıldı.
+  
+Bu projede temel SQL komutları ve tablolar arası ilişki kurma işlemleri uygulanmıştır. Veritabanı yapısına göre müşteri, aktör, kiralama ve ödeme bilgileri üzerinde sorgular gerçekleştirilmiştir.

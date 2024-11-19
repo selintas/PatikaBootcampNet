@@ -17,16 +17,20 @@ Açıklamalar:
 Dizi Sınıfı:
 
 Kullanıcıdan alınan dizi bilgilerini tutar (örneğin, ad, tür, yönetmen vb.).
+
 KomediDiziOzeti Sınıfı:
 
 Sadece Name, Genre, ve Director özelliklerini tutar. Bu, komedi dizileri için oluşturulan özet bir sınıftır.
+
 Kullanıcıdan Veri Alma:
 
 Kullanıcıya bir dizi ekleyip eklemek istemediği sorulur ve döngü devam eder.
+
 Komedi Dizileri Filtreleme:
 
 LINQ kullanılarak yalnızca Genre özelliği "Komedi" içeren diziler filtrelenir.
 Yeni bir liste oluşturulur ve bu liste, önce dizi adı (Name), sonra yönetmen adı (Director) baz alınarak sıralanır.
+
 Sonuçların Yazdırılması:
 
 Komedi dizileri tüm özellikleriyle ekrana yazdırılır.

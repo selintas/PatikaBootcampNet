@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqJoin", "cohort7\LinqJoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLinqJoin", "cohort7\PratikLinqJoin\PratikLinqJoin.csproj", "{134D4DC9-85AC-41EE-8401-C13880C68EAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLinqGroupJoin", "cohort7\PratikLinqGroupJoin\PratikLinqGroupJoin.csproj", "{0927F0FB-2053-4740-895C-5896D8871209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{134D4DC9-85AC-41EE-8401-C13880C68EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134D4DC9-85AC-41EE-8401-C13880C68EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{134D4DC9-85AC-41EE-8401-C13880C68EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0927F0FB-2053-4740-895C-5896D8871209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0927F0FB-2053-4740-895C-5896D8871209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0927F0FB-2053-4740-895C-5896D8871209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0927F0FB-2053-4740-895C-5896D8871209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{AA59D8C3-B8F0-4983-AAA1-BE26217FD044} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
 		{486D8A64-D907-45BC-9601-540806507CF5} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
 		{134D4DC9-85AC-41EE-8401-C13880C68EAD} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
+		{0927F0FB-2053-4740-895C-5896D8871209} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45B4CACA-9C7A-49B4-AC4A-DC7BD6292A5F}

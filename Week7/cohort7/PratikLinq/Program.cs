@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 
 class Program
 {
@@ -16,6 +17,7 @@ class Program
         {  
             numbers.Add(random.Next(-50,51));
         }
+       
 
         // Listeyi konsola yazdır
         Console.WriteLine("Rastgele Sayılar: ");
@@ -25,7 +27,11 @@ class Program
         // Çift olan sayılar
         var evenNumbers = numbers.Where(n => n % 2 == 0).ToList();
         Console.WriteLine("Çift Sayılar: ");
-        evenNumbers.ForEach(num => Console.Write(num + " "));
+        //evenNumbers.ForEach(num => Console.Write(num + " ")); 
+        foreach (var number in evenNumbers)
+        {
+            Console.WriteLine(number);
+        }
         Console.WriteLine("\n_____");
 
         // Tek olan sayılar
@@ -52,10 +58,14 @@ class Program
         rangeNumbers.ForEach(num => Console.Write(num + " "));
         Console.WriteLine("\n_____");
 
-        // Listedeki her bir sayının karesi
-        var squaredNumbers = numbers.Select(n => n * n).ToList();
+        // Listedeki her bir sayının karesi SELECT ile
+        var squaredNumbers = numbers.Select(n => n * n).ToList(); //Select ile list elemanındakı belirli öz seçmek için list elemanı girer istenılen sonuc cıkar.(girdi alınır istenılen cıkar.)
         Console.WriteLine("Listedeki Sayıların Kareleri: ");
-        squaredNumbers.ForEach(num => Console.Write(num + " "));
+        //squaredNumbers.ForEach(num => Console.Write(num + " "));
+        foreach (var number in squaredNumbers)
+        {
+            Console.WriteLine(number);
+        }
         Console.WriteLine("\n_____");
     }
 }

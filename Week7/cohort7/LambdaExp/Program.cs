@@ -1,9 +1,6 @@
 ﻿// (parameterList) => expression
 
-//Burada:
-
 //parameterList: Lambda ifadesinin parametre listesidir.
-
 
 //=>: Lambda operatörü, parametre listesini ifadenin (expression) sağ tarafına bağlar.
 
@@ -11,7 +8,7 @@
 
 List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
 
-// Lambda ifadesiyle her elemanın karesini alalım
+// Lambda ifadesiyle her elemanın karesini alalım (SELECT).
 List<int> squares = numbers.Select(x => x * x).ToList();
 
 foreach (var square in squares)

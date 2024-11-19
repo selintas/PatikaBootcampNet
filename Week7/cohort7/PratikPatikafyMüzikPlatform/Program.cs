@@ -20,7 +20,11 @@ public class Program
             new Singer { Name = "Neşet Ertaş", MusicGenre = "Türk Halk Müziği / Türk Sanat Müziği", DebutYear = 1960, AlbumSales = 2 }
         };
         // 1. Adı 'S' ile başlayan şarkıcılar
-        var NameS = singers.Where(s => s.Name.StartsWith("S")).ToList();
+        //var NameS = singers.Where(s => s.Name.StartsWith("S")).ToList();
+
+        var NameS = from singer in singers
+                    where singer.Name.StartsWith("S")
+                    select singer;
 
         foreach (var singer in NameS)
         {
@@ -29,7 +33,11 @@ public class Program
         Console.WriteLine("\n_____");
 
         // 2. Albüm satışları 10 milyon'un üzerinde olan şarkıcılar
-        var highSalesSingers = singers.Where(s => s.AlbumSales > 10).ToList();
+        //var highSalesSingers = singers.Where(s => s.AlbumSales > 10).ToList();
+        var highSalesSingers = from singer in singers
+                               where singer.AlbumSales > 10
+                               select singer;
+
         foreach (var singer in highSalesSingers)
         { Console.WriteLine(singer.Name); }
         Console.WriteLine("\n_____");
@@ -40,23 +48,23 @@ public class Program
                                      .ThenBy(s => s.Name)
                                      .ToList(); 
         foreach(var singer in earlyPopSingers)
-        { Console.WriteLine(singer.Name);}
+        { Console.WriteLine($"Şarkıcı Adı : {singer.Name} || Çıkış Yılı : {singer.DebutYear}"); }
         Console.WriteLine("\n_____");
 
         // 4. En çok albüm satan şarkıcı
-        var topSeller = singers.OrderByDescending(s => s.AlbumSales).FirstOrDefault();
-       
+        var topSeller = singers.OrderByDescending(s => s.AlbumSales).First();  // satış sayısına göre azalan sırayla
+
         Console.WriteLine($"\"En çok albüm satan şarkıcı: {topSeller}");
         Console.WriteLine("\n_____");
 
         // 5. En yeni ve en eski çıkış yapan şarkıcı
-        var newestSinger = singers.OrderByDescending(s => s.DebutYear).FirstOrDefault(); 
+        var newestSinger = singers.OrderByDescending(s => s.DebutYear).FirstOrDefault(); //.First(); olabılır.
 
-        var oldestSinger = singers.OrderBy(s => s.DebutYear).FirstOrDefault();
+        var oldestSinger = singers.OrderBy(s => s.DebutYear).FirstOrDefault(); //.First(); olabılır.
 
-        Console.WriteLine($"En yeni çıkış yapan şarkıcı:{newestSinger}");
+        Console.WriteLine($"En yeni çıkış yapan şarkıcı:{newestSinger}  \nEn eski çıkış yapan şarkıcı:{oldestSinger} ");
 
-        Console.WriteLine($"\nEn eski çıkış yapan şarkıcı:{oldestSinger}");
+       
        
     }
 }

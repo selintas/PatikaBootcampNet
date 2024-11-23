@@ -25,13 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikLists1", "cohort\Prat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikList2", "cohort\PratikList2\PratikList2.csproj", "{5C49EE04-786A-459D-BB3D-F739103AC4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikIMDBList", "cohort\PratikIMDBList\PratikIMDBList.csproj", "{782985C5-0375-4AB3-A8FB-825B9BA19923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikIMDBList", "cohort\PratikIMDBList\PratikIMDBList.csproj", "{782985C5-0375-4AB3-A8FB-825B9BA19923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "cohort\Dictionary\Dictionary.csproj", "{8B486835-FC40-4B47-B2BD-CD21B8CAD7A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "cohort\Dictionary\Dictionary.csproj", "{8B486835-FC40-4B47-B2BD-CD21B8CAD7A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryV", "cohort\DictionaryV\DictionaryV.csproj", "{C89E235B-4C00-488E-AA3F-776952709F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictionaryV", "cohort\DictionaryV\DictionaryV.csproj", "{C89E235B-4C00-488E-AA3F-776952709F64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackQueueV", "cohort\StackQueueV\StackQueueV.csproj", "{F3433021-DC18-4EBA-AAF0-09221B22E74C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackQueueV", "cohort\StackQueueV\StackQueueV.csproj", "{F3433021-DC18-4EBA-AAF0-09221B22E74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "cohort\TryCatch\TryCatch.csproj", "{67F9E855-B085-4852-9E63-4340E3311702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptionV", "cohort\CustomExceptionV\CustomExceptionV.csproj", "{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +99,14 @@ Global
 		{F3433021-DC18-4EBA-AAF0-09221B22E74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3433021-DC18-4EBA-AAF0-09221B22E74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3433021-DC18-4EBA-AAF0-09221B22E74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F9E855-B085-4852-9E63-4340E3311702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F9E855-B085-4852-9E63-4340E3311702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F9E855-B085-4852-9E63-4340E3311702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F9E855-B085-4852-9E63-4340E3311702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +126,8 @@ Global
 		{8B486835-FC40-4B47-B2BD-CD21B8CAD7A4} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 		{C89E235B-4C00-488E-AA3F-776952709F64} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 		{F3433021-DC18-4EBA-AAF0-09221B22E74C} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
+		{67F9E855-B085-4852-9E63-4340E3311702} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
+		{E7C8BD87-DB34-4B94-BA9D-FFD46CFA67CE} = {DB761982-FD27-41A3-B5F0-70FAC7F0B0D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9453ECAA-C2BD-441F-B5E7-0558E1601E66}

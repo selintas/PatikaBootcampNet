@@ -5,29 +5,36 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cohort7", "cohort7", "{E23F1B0C-53AA-4A73-BA4C-A90A57059A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExp", "cohort7\LambdaExp\LambdaExp.csproj", "{826ABE30-E971-451A-A82B-25AFBB602B6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExp", "cohort7\LambdaExp\LambdaExp.csproj", "{826ABE30-E971-451A-A82B-25AFBB602B6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLinq", "cohort7\PratikLinq\PratikLinq.csproj", "{359D341B-A9A4-4E46-9810-F0D074B97911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikLinq", "cohort7\PratikLinq\PratikLinq.csproj", "{359D341B-A9A4-4E46-9810-F0D074B97911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "cohort7\Linq\Linq.csproj", "{3EEF894B-C4A7-43CC-AA0E-DFBA71F3AABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq", "cohort7\Linq\Linq.csproj", "{3EEF894B-C4A7-43CC-AA0E-DFBA71F3AABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpV", "cohort7\LambdaExpV\LambdaExpV.csproj", "{35920081-7C1D-4187-B1DD-2053F01AC1F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpV", "cohort7\LambdaExpV\LambdaExpV.csproj", "{35920081-7C1D-4187-B1DD-2053F01AC1F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqGiris", "cohort7\LinqGiris\LinqGiris.csproj", "{66A3B9C3-E104-469D-A667-A9B0F4104BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqGiris", "cohort7\LinqGiris\LinqGiris.csproj", "{66A3B9C3-E104-469D-A667-A9B0F4104BDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBasicQueryV", "cohort7\LinqBasicQueryV\LinqBasicQueryV.csproj", "{2885EA9A-71D2-4E29-BF0C-9B0F68F5F925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqBasicQueryV", "cohort7\LinqBasicQueryV\LinqBasicQueryV.csproj", "{2885EA9A-71D2-4E29-BF0C-9B0F68F5F925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikPatikafyMüzikPlatform", "cohort7\PratikPatikafyMüzikPlatform\PratikPatikafyMüzikPlatform.csproj", "{0557211A-945E-4F97-BD31-85EF24DBE978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikPatikafyMüzikPlatform", "cohort7\PratikPatikafyMüzikPlatform\PratikPatikafyMüzikPlatform.csproj", "{0557211A-945E-4F97-BD31-85EF24DBE978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikPatikaflixDizilerPlatformu", "cohort7\PratikPatikaflixDizilerPlatformu\PratikPatikaflixDizilerPlatformu.csproj", "{ACCE3EC6-0D57-4801-908E-7E0A12A3EBD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikPatikaflixDizilerPlatformu", "cohort7\PratikPatikaflixDizilerPlatformu\PratikPatikaflixDizilerPlatformu.csproj", "{ACCE3EC6-0D57-4801-908E-7E0A12A3EBD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAdvancedV", "cohort7\LinqAdvancedV\LinqAdvancedV.csproj", "{AA59D8C3-B8F0-4983-AAA1-BE26217FD044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqAdvancedV", "cohort7\LinqAdvancedV\LinqAdvancedV.csproj", "{AA59D8C3-B8F0-4983-AAA1-BE26217FD044}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqJoin", "cohort7\LinqJoin\LinqJoin.csproj", "{486D8A64-D907-45BC-9601-540806507CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqJoin", "cohort7\LinqJoin\LinqJoin.csproj", "{486D8A64-D907-45BC-9601-540806507CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLinqJoin", "cohort7\PratikLinqJoin\PratikLinqJoin.csproj", "{134D4DC9-85AC-41EE-8401-C13880C68EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikLinqJoin", "cohort7\PratikLinqJoin\PratikLinqJoin.csproj", "{134D4DC9-85AC-41EE-8401-C13880C68EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikLinqGroupJoin", "cohort7\PratikLinqGroupJoin\PratikLinqGroupJoin.csproj", "{0927F0FB-2053-4740-895C-5896D8871209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PratikLinqGroupJoin", "cohort7\PratikLinqGroupJoin\PratikLinqGroupJoin.csproj", "{0927F0FB-2053-4740-895C-5896D8871209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorular", "Sorular", "{CF7DE7B5-AC57-4C89-9838-769BBCB01F1F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicLinq", "Sorular\BasicLinq\BasicLinq.csproj", "{04D27496-D951-491E-BD9A-27DA5AB73F40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +90,10 @@ Global
 		{0927F0FB-2053-4740-895C-5896D8871209}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0927F0FB-2053-4740-895C-5896D8871209}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0927F0FB-2053-4740-895C-5896D8871209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D27496-D951-491E-BD9A-27DA5AB73F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D27496-D951-491E-BD9A-27DA5AB73F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D27496-D951-491E-BD9A-27DA5AB73F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D27496-D951-491E-BD9A-27DA5AB73F40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +111,7 @@ Global
 		{486D8A64-D907-45BC-9601-540806507CF5} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
 		{134D4DC9-85AC-41EE-8401-C13880C68EAD} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
 		{0927F0FB-2053-4740-895C-5896D8871209} = {E23F1B0C-53AA-4A73-BA4C-A90A57059A52}
+		{04D27496-D951-491E-BD9A-27DA5AB73F40} = {CF7DE7B5-AC57-4C89-9838-769BBCB01F1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45B4CACA-9C7A-49B4-AC4A-DC7BD6292A5F}

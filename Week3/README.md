@@ -38,4 +38,6 @@ void DortIslem(double a, double b, out double toplam, out double fark, out doubl
 9. Recursion
 int Faktoriyel(int sayi)
 int BirdenSayiyaToplam(int sayi)
-string Tersi(string metin)
+string Tersi(string metin) 
+
+10. Recursıon Sonduz Dongu eklendı. (persembe) Ha3bLİveclas

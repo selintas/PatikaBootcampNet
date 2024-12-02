@@ -8,10 +8,10 @@ namespace PratikAspNetCoreEmpty3.Controllers
         public IActionResult Index()
         {
             List<Product> products = new List<Product>()
-    {
-        new Product { Id = 1, Name = "pc", Price = 10000 },
-        new Product { Id = 2, Name = "phone", Price = 5000 },
-    };
+            {
+            new Product { Id = 1, Name = "pc", Price = 10000 },
+            new Product { Id = 2, Name = "phone", Price = 5000 },
+            };
 
             ProductViewModel viewModel = new()
             {

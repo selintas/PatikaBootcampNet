@@ -1,8 +1,8 @@
+using IlkMvcUygulamam.Models;
 using Microsoft.AspNetCore.Mvc;
-using PratikBasicMVC.Models;
 using System.Diagnostics;
 
-namespace PratikBasicMVC.Controllers
+namespace IlkMvcUygulamam.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,4 +1,4 @@
-namespace PratikBasicMVC.Models
+namespace IlkMvcUygulamam.Models
 {
     public class ErrorViewModel
     {

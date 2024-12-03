@@ -1,0 +1,53 @@
+﻿@model CustomerOrderViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Orders</title>
+</head>
+<body>
+
+    <h2>Customer Orders</h2>
+
+    <!-- Customer Details -->
+    <div>
+        <h3>Customer Details</h3>
+        <p><strong>Customer ID:</strong> @Model.Customer.Id</p>
+        <p><strong>Name:</strong> @Model.Customer.FirstName @Model.Customer.LastName</p>
+        <p><strong>Email:</strong> @Model.Customer.Email</p>
+    </div>
+
+    <hr>
+
+    <!-- Orders Table -->
+    <div>
+        <h3>Orders</h3>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Orders)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.ProductName</td>
+                        <td>@order.Price.ToString("C")</td>
+                        <td>@order.Quantity</td>
+                        <td>@(order.Price * order.Quantity).ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿﻿@model List<OgrenciViewModel>
+@{
+    ViewData["Title"] = "Abidik";
+}
+
+<h1>Öğrenciler</h1>
+
+@if (TempData["Mesaj"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Mesaj"]
+    </div>
+}
+
+<a class="btn btn-primary" asp-controller="Ogrenciler" asp-action="Yeni">Yeni Öğrenci</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Ad</th>
+            <th>Doğum Yılı</th>
+            <th>Tuttuğu Takım</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (OgrenciViewModel ogrenci in Model)
+        {
+            <tr>
+                <td>@ogrenci.Id</td>
+                <td>@ogrenci.Ad</td>
+                <td>@ogrenci.DogumYili</td>
+                <td>@ogrenci.TuttuguTakim</td>
+                <td>
+                    <a asp-action="Duzenle" class="btn btn-warning" asp-route-id="@ogrenci.Id">Düzenle</a>
+                    <a asp-action="SilOnay" class="btn btn-danger" asp-route-id="@ogrenci.Id">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

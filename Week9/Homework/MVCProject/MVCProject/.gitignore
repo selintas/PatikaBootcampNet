@@ -1,0 +1,103 @@
+﻿# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.rsuser
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio
+.vs/
+
+# DotNet Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# Npm Packages
+node_modules/
+wwwroot/lib/
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# Rider
+.idea/
+*.sln.iml
+
+# Mac
+*.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Generated files
+*.g.cs
+*.g.i.cs
+*.generated.cs
+*.generated.h
+*.designer.cs
+*.dll
+*.pdb
+*.exe
+*.app
+*.ipa
+*.dSYM
+*.ps1
+*.sh
+*.suo
+*.psess
+*.pdb
+*.cache
+*.ilk
+*.lib
+*.nupkg
+*.snk
+
+# Publish folder
+publish/
+*.publish.xml
+
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Test Results
+TestResults/
+.trx
+*.TestResults.xml
+
+# Temporary files
+*.tmp
+*.temp
+
+# ReSharper
+_ReSharper*
+*.DotSettings.user
+
+# Backup files
+*.bak
+*.swp
+*~.*
+
+# Rider's Metadata
+.idea/

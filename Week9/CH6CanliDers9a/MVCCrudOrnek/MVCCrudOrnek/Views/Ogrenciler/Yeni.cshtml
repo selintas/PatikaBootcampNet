@@ -1,22 +1,35 @@
-﻿@model YeniOgrenciViewModel 
+﻿﻿@model YeniOgrenciViewModel
 @{
-    ViewBag.Title = "Yeni Öğrenci"; 
+    ViewBag.Title = "Yeni Öğrenci";
 }
-<h1>Yeni Öğrenci</h1> 
- 
+
+<h1>Yeni Öğrenci</h1>
+
 <form method="post">
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <label asp-for="Ad" class="form-label"></label>
+        <input asp-for="Ad" class="form-control">
+        <div class="form-text text-danger">
+            <span asp-validation-for="Ad"></span>
+        </div>
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label asp-for="DogumYili" class="form-label"></label>
+        <input asp-for="DogumYili" class="form-control">
+        <div class="form-text text-danger">
+            <span asp-validation-for="DogumYili"></span>
+        </div>
     </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="mb-3">
+        <label asp-for="TakimId" class="form-label"></label>
+        <select asp-for="TakimId" asp-items="ViewBag.Takimlar" class="form-select">
+            <option value="">Seçiniz</option>
+        </select>
+        <div class="form-text text-danger">
+            <span asp-validation-for="TakimId"></span>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a class="btn btn-secondary" asp-action="Index">Vazgeç</a>
 </form>

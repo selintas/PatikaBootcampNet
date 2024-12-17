@@ -1,0 +1,49 @@
+﻿@model List<MVCProject.Models.AuthorViewModel>
+
+@{
+    ViewData["Title"] = "Authors List";
+}
+
+<div class="container mt-5">
+    <div class="mb-3 d-flex align-items-center justify-content-between">
+        <h2>Authors List</h2>
+        <a asp-action="Create" class="btn btn-primary">Add New Author</a>
+    </div>
+    <table class="table table-striped">
+        <thead class="table">
+            <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Date of Birth</th>
+                <th class="text-end">Actions</th> <!-- Sütunu sağa yasla -->
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                int index = 1;
+                foreach (var author in Model)
+                {
+                    <tr>
+                        <td>@index</td>
+                        <td>@author.FullName</td>
+                        <td>@author.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                        <td class="text-end">
+                            <!-- Hücreyi sağa yasla -->
+                            <a asp-action="Details" asp-route-id="@author.Id" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Edit" asp-route-id="@author.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@author.Id" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                    index++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" class="text-center">No authors found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

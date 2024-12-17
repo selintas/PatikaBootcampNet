@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using MVCCrudOrnek.Models;
+using MVCProject.Models;
 using System.Diagnostics;
 
-namespace MVCCrudOrnek.Controllers
+namespace MVCProject.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,7 +18,7 @@ namespace MVCCrudOrnek.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }

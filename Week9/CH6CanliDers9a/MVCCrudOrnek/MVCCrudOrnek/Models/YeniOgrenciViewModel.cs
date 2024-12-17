@@ -4,17 +4,17 @@ namespace MVCCrudOrnek.Models
 {
     public class YeniOgrenciViewModel
     {
-        [Display(Name ="Ogrenci Adı")]
-        [Required(ErrorMessage ="Ad alanı zorunlu.")]
-        [MaxLength(30, ErrorMessage = "ogrencı adı uzunluğu max 30 karakterden fazla olmaz.")]
+        [Display(Name = "Eklenecek Öğrencinin Adı")]
+        [Required(ErrorMessage = "'Ad' alanı zorunludur.")]
+        [MaxLength(20, ErrorMessage = "Öğrencinin adı 30 karakterden uzun olamaz.")]
         public string Ad { get; set; } = "";
-        [Display(Name = "Tuttugu takım")]
-        [Required(ErrorMessage = "'{0}' alanı zorunlu.")]
-        [MaxLength(20, ErrorMessage ="Takım adı uzunluğu max 20 karakterden fazla olmaz.")]
-        public string Takım { get; set; } = "";
-        [Display(Name = "Doğum Yılı")]
-        [Required(ErrorMessage = "'{0}' alan zorunlu.")]
 
-        public int? DogumYili { get; set; } // ? koyunca null olabılır
+        [Display(Name = "Tuttuğu Takım")]
+        [Required(ErrorMessage = "'{0}' alanı zorunludur.")]
+        public int? TakimId { get; set; }
+
+        [Display(Name = "Doğum Yılı")]
+        [Required(ErrorMessage = "'{0}' alan zorunludur.")]
+        public int? DogumYili { get; set; }
     }
 }

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">About the Library Management System</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Our Purpose</h4>
+            <p>
+                The Library Management System is a platform that allows you to easily manage books and authors in libraries, add new books, and update existing book information. This system provides efficient organization by managing libraries in a digital environment and enables users to perform quick and easy operations on books.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h4>Features</h4>
+            <ul>
+                <li>You can add new books and update existing ones.</li>
+                <li>You can add and edit author information for your books.</li>
+                <li>You can delete or add new records to the book and author lists.</li>
+                <li>You can access detailed information about books and authors.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <h4>About the Developer</h4>
+            <p>
+                This system was developed to streamline the software development processes. The technologies used in the project include ASP.NET Core MVC, Bootstrap, and Entity Framework. The goal of this project is to provide a user-friendly interface and an effective management panel.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+            <a class="btn btn-primary" href="@Url.Action("Index", "Home")">Back to Home</a>
+        </div>
+    </div>
+</div>

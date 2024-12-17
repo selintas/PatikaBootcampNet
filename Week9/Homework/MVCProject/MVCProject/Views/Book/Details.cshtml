@@ -1,0 +1,38 @@
+﻿@model MVCProject.Models.BookViewModel
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h3>Book Details</h3>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Kitap Başlığı</dt>
+                <dd class="col-sm-9">@Model.Title</dd>
+
+                <dt class="col-sm-3">Yazar</dt>
+                <dd class="col-sm-9">@Model.AuthorFullName</dd>
+
+                <dt class="col-sm-3">Tür</dt>
+                <dd class="col-sm-9">@Model.Genre</dd>
+
+                <dt class="col-sm-3">Yayın Tarihi</dt>
+                <dd class="col-sm-9">@Model.PublishDate.ToString("dd/MM/yyyy")</dd>
+
+                <dt class="col-sm-3">ISBN</dt>
+                <dd class="col-sm-9">@Model.ISBN</dd>
+
+                <dt class="col-sm-3">Mevcut Kopya</dt>
+                <dd class="col-sm-9">@Model.CopiesAvailable</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Düzenle</a>
+            <a asp-action="Index" class="btn btn-secondary">Geri</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kişiler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Kişiler</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ad</th>
+            </tr>
+        </thead>
+        <tbody id="sonuc"></tbody>
+    </table>
+
+    <script>
+        let tbody = document.getElementById("sonuc");
+        let apiUrl = "https://localhost:7023/api/Kisiler";
+
+
+        fetch(apiUrl)
+            .then(res => res.json())
+            .then(kisiler => {
+                for (let kisi of kisiler) {
+                    tbody.innerHTML += `<tr><td>${kisi.id}</td><td>${kisi.ad}</td></tr>`;
+                }
+            });
+    </script>
+</body>
+</html>

@@ -18,9 +18,16 @@ namespace CrazyMusiciansAPI.Controllers
 
         // GET api/<MusicianController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<Musician> Get(int id)
         {
-            return "value";
+            Musician? musician = DataStore.Musicians().FirstOrDefault(x => x.Id == id);
+
+            if (musician == null)
+                return NotFound();
+
+            return musician;
+
+
         }
 
         // POST api/<MusicianController>

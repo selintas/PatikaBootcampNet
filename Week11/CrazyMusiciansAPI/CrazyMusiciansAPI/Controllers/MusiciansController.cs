@@ -10,8 +10,6 @@ namespace CrazyMusiciansAPI.Controllers
     public class MusiciansController : ControllerBase
     {
         // GET: api/<MusiciansController>
-
-
         [HttpGet]
         public List<Musician> Get()
         {
@@ -28,8 +26,6 @@ namespace CrazyMusiciansAPI.Controllers
                 return NotFound();
 
             return musician;
-
-
         }
 
         // POST api/<MusiciansController>

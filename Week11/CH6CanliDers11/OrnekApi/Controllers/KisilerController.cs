@@ -11,6 +11,7 @@ namespace OrnekApi.Controllers
     {
         // GET: api/Kisiler
         [HttpGet]
+        
         public List<Kisi> Get()
         {
             return Veri.Kisiler();
@@ -18,6 +19,8 @@ namespace OrnekApi.Controllers
 
         // GET: api/Kisiler/3
         [HttpGet("{id}")]
+        
+
         public ActionResult<Kisi> Get(int id)
         {
             Kisi? kisi = Veri.Kisiler().FirstOrDefault(x => x.Id == id);

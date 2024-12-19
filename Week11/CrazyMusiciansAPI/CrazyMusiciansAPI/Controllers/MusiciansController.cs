@@ -7,9 +7,11 @@ namespace CrazyMusiciansAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MusicianController : ControllerBase
+    public class MusiciansController : ControllerBase
     {
-        // GET: api/<MusicianController>
+        // GET: api/<MusiciansController>
+
+
         [HttpGet]
         public List<Musician> Get()
         {
@@ -30,19 +32,19 @@ namespace CrazyMusiciansAPI.Controllers
 
         }
 
-        // POST api/<MusicianController>
+        // POST api/<MusiciansController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<MusicianController>/5
+        // PUT api/<MusiciansController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<MusicianController>/5
+        // DELETE api/<MusiciansController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

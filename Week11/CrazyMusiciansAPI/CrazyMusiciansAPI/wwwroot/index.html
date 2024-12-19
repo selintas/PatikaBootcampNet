@@ -8,7 +8,7 @@
 <body>
     <h1>Musicians</h1>
 
-    <table class="table"> 
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -18,7 +18,21 @@
                 <th>YearsActive</th>
             </tr>
         </thead>
+        <tbody id="sonuc"></tbody>
     </table>
 
+    <script>
+        let tbody = document.getElementById("sonuc");
+        let apiUrl = "https://localhost:7175/api/Musicians";
+
+
+        fetch(apiUrl)
+            .then(res => res.json())
+            .then(musicians => {
+                for (let musician of musicians) {
+                    tbody.innerHTML += `<tr><td>${musician.id}</td><td>${musician.ad}</td><td>${musician.instrument}</td><td>${musician.genre}</td><td>${musician.yearsActive}</td></tr>`;
+                }
+            });
+    </script>
 </body>
 </html>

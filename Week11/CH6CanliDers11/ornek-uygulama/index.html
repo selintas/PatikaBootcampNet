@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ünlü Kişiler</title>
+</head>
+<body>
+    <h1>Ünlü Kişiler</h1>
+
+    <ul id="kisiler"></ul>
+
+    <script>
+        let ulKisiler = document.getElementById("kisiler");
+
+        fetch("https://localhost:7037/api/Kisiler")
+        .then(res => res.json())
+        .then(dizi => {
+            console.log(dizi);
+            for (let insan of dizi) {
+                ulKisiler.innerHTML += "<li>" + insan.ad + "</li>";
+            }
+        });
+    </script>
+</body>
+</html>

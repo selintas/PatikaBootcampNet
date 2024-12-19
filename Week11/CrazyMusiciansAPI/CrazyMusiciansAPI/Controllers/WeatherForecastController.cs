@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace OrnekApi.Controllers
+namespace CrazyMusiciansAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

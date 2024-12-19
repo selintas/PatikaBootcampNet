@@ -1,4 +1,4 @@
-namespace OrnekApi
+namespace CrazyMusiciansAPI
 {
     public class WeatherForecast
     {

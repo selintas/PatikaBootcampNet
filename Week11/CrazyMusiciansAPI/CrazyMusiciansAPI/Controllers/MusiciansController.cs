@@ -37,7 +37,7 @@ namespace CrazyMusiciansAPI.Controllers
         {
             Musician musician = new Musician()
             {
-                Id = DataStore.Musicians().Max(x => x.Id) + 1, // 1 fazlası ıd ekler 
+                Id = DataStore.Musicians().Any() ? DataStore.Musicians().Max(x => x.Id) + 1 : 1, // 1 fazlası ıd ekler 
                 Name = dto.Name,
                 Instrument = dto.Instrument,
                 Genre = dto.Genre,

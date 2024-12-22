@@ -56,8 +56,8 @@ namespace CrazyMusiciansAPI.Controllers
             {
                 Id = DataStore.Musicians().Any() ? DataStore.Musicians().Max(x => x.Id) + 1 : 1, // 1 fazlası ıd ekler 
                 Name = dto.Name,
-                Instrument = dto.Instrument,
-                Genre = dto.Genre,
+                profession = dto.Instrument,
+                funFact = dto.Genre,
                 YearsActive = dto.YearsActive
             };
             DataStore.Musicians().Add(musician);
@@ -77,8 +77,8 @@ namespace CrazyMusiciansAPI.Controllers
                 return NotFound(); // Müzisyen bulunamadıysa 404 döndür
             
             musician.Name = dto.Name;
-            musician.Instrument = dto.Instrument;
-            musician.Genre = dto.Genre;
+            musician.profession = dto.Instrument;
+            musician.funFact = dto.Genre;
             musician.YearsActive = dto.YearsActive;
 
             return NoContent(); // Başarılı güncelleme, içerik yok (204) //204 no content içerik yok
@@ -100,10 +100,10 @@ namespace CrazyMusiciansAPI.Controllers
                 musician.Name = name;
 
             if (!string.IsNullOrEmpty(instrument))
-                musician.Instrument = instrument;
+                musician.profession = instrument;
 
             if (!string.IsNullOrEmpty(genre))
-                musician.Genre = genre;
+                musician.funFact = genre;
 
             // yearsActive kontrolü ve güncellemesi
             // yearsActive kontrolü ve güncellemesi

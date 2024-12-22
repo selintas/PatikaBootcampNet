@@ -22,7 +22,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        // Swagger UI'nin ana rota adresini belirle
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Crazy Musicians API v1");
+    });
 }
 
 app.UseHttpsRedirection();

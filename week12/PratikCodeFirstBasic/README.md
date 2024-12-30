@@ -133,5 +133,10 @@ dotnet ef database update
 
 ---
 
+
 ### Sonuç
 Yukarıdaki adımları izleyerek `PatikaCodeFirstDb1` adlı veritabanını PostgreSQL üzerinde oluşturabilir ve `Movies` ile `Games` tablolarını başarılı bir şekilde kullanabilirsiniz.
+
+![Screenshot (863)](https://github.com/user-attachments/assets/7b44488e-40a8-45e3-b050-64e6cebfe249)
+
+![Screenshot (862)](https://github.com/user-attachments/assets/65bb5b25-8d57-4255-8ffe-d7b44ceb8f5f)

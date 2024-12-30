@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PratikCodeFirstRelation", "PratikCodeFirstRelation\PratikCodeFirstRelation.csproj", "{F6641D00-0D5B-44FF-BB6F-7F7091F1E7EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6641D00-0D5B-44FF-BB6F-7F7091F1E7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6641D00-0D5B-44FF-BB6F-7F7091F1E7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6641D00-0D5B-44FF-BB6F-7F7091F1E7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6641D00-0D5B-44FF-BB6F-7F7091F1E7EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7029C7FA-28D7-4A8F-AE80-45A47F809EA2}
+	EndGlobalSection
+EndGlobal

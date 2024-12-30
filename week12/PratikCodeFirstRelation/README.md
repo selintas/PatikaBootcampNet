@@ -130,4 +130,5 @@ Migration ve güncelleme işlemi tamamlandıktan sonra PostgreSQL veritabanını
 2. **Posts**: Gönderi bilgilerini saklar ve `UserId` sütunu üzerinden `Users` tablosuyla ilişkilendirilmiştir.
 
 ---
+![Screenshot (866)](https://github.com/user-attachments/assets/7a6cb91e-0dc5-4633-a483-d9193deb9376)
 

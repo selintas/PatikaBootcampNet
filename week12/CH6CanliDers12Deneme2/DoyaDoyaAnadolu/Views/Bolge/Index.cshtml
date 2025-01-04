@@ -1,0 +1,16 @@
+﻿﻿@@model Bolge
+@{
+    ViewBag.Title = Model.BolgeAd + " Bölgesi ve Şehirleri";
+}
+
+<h1>@Model.BolgeAd</h1>
+<p>Şehir Adedi: @Model.Sehirler.Count</p>
+
+<div class="list-group">
+    @foreach (Sehir sehir in Model.Sehirler)
+    {
+        <a asp-controller="Sehir" asp-action="Index" asp-route-id="@sehir.Id" class="list-group-item list-group-item-action">@sehir.SehirAd</a>
+    }
+</div>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">&larr; Tüm Bölgeler</a>

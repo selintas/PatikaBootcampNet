@@ -1,0 +1,15 @@
+﻿@model List<Bolge>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4">Türkiye'nin Bölgeleri</h1>
+
+<div class="list-group">
+    @foreach (Bolge bolge in Model)
+    {
+        <a asp-controller="Bolge" asp-action="Index" asp-route-id="@bolge.Id" class="list-group-item list-group-item-action">
+            @bolge.BolgeAd (@bolge.Sehirler.Count)
+        </a>
+    }
+</div>

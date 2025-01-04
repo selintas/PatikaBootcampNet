@@ -1,0 +1,18 @@
+﻿﻿@@model Sehir
+@{
+    ViewData["Title"] = Model.SehirAd + " Şehri ve Detayları";
+}
+
+<h1>@Model.SehirAd</h1>
+
+<dl>
+    <dt>Plaka</dt>
+    <dd>@Model.Id.ToString("00")</dd>
+    <dt>Nüfus</dt>
+    <dd>@Model.Nufus.ToString("n0")</dd>
+    <dt>Bölgesi</dt>
+    <dd>@Model.Bolge.BolgeAd</dd>
+</dl>
+
+
+<a asp-controller="Bolge" asp-action="Index" asp-route-id="@Model.BolgeId" class="btn btn-primary mt-3">&larr; Şehirler Listesi</a>

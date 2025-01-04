@@ -123,3 +123,4 @@ update-database
 - Ara tabloyu manuel olarak oluşturduk.
 - Ara tablonun birincil anahtarını (Composite Key) DbContext sınıfında tanımladık.
 - Eğer BaseClass kullanıyor olsaydık ve bir `Id` kolonu geliyor olsaydı, bu yapıyı `Ignore` ile göz ardı etmemiz gerekirdi.
+![Screenshot (867)](https://github.com/user-attachments/assets/528c9c95-6a12-4937-a0de-251a9984ff7d)

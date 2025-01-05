@@ -1,6 +1,6 @@
 ﻿namespace Survivor.Models
 {
-    public class Competitor
+    public class Competitor : BaseEntity<int>
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

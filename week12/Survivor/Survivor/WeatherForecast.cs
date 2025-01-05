@@ -1,4 +1,4 @@
-namespace OnlineShoppingPlatform
+namespace Survivor
 {
     public class WeatherForecast
     {

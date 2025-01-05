@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// ekle ve json da
 var cs = builder.Configuration.GetConnectionString("BaglantıCümlem");
 builder.Services.AddDbContext<TurkiyeContext>(builder => builder.UseNpgsql(cs));
 builder.Services.AddControllersWithViews();

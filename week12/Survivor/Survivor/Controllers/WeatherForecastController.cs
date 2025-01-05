@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace OnlineShoppingPlatform.Controllers
+namespace Survivor.Controllers
 {
     [ApiController]
     [Route("[controller]")]

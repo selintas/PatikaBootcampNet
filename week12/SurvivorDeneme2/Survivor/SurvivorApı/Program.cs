@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Survivor.Data;
+using SurvivorApı.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Add services to the container.
+// Add services to the container. 
+
 var cs = builder.Configuration.GetConnectionString("BaglantıCümlem");
 builder.Services.AddDbContext<SurvivorDbContext>(builder => builder.UseNpgsql(cs));
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

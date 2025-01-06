@@ -1,11 +1,13 @@
-﻿@model YeniOgrenciViewModel
+﻿@model OgrenciDuzenleViewModel
 @{
-    ViewBag.Title = "Yeni Öğrenci";
+    ViewBag.Title = "Öğrenci Düzenleme";
 }
 
-<h1>Yeni Öğrenci</h1>
+<h1>Öğrenciyi Düzenle</h1>
 
 <form method="post">
+    <input type="hidden" asp-for="Id" />
+
     <div class="mb-3">
         <label asp-for="Ad" class="form-label"></label>
         <input asp-for="Ad" class="form-control">

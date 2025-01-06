@@ -1,0 +1,17 @@
+﻿﻿@@model Ogrenci
+@{
+    ViewBag.Title = "Silme Onayı";
+}
+
+<h1>Silme Onayı</h1>
+
+<form asp-action="Sil" asp-route-id="@Model.Id" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <p>&quot;@Model.Ad&quot; adlı öğrenciyi silmek istediğinize emin misiniz?</p>
+
+    <button class="btn btn-primary">Evet, sil!</button>
+    <a class="btn btn-secondary" asp-action="Index">Vazgeç</a>
+
+</form>

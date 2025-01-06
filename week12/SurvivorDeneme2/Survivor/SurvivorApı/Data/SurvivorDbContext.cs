@@ -22,15 +22,15 @@ namespace SurvivorApı.Data
                  {
                  Id = 1,
                  Name = "Unluler",  // Kategorinin adı
-                 CreatedDate = new DateTime(2024, 1, 1, 10, 0, 0), // 2024-01-01 10:00:00
-                 UpdatedDate = new DateTime(2024, 1, 1, 10, 0, 0)
+                 CreatedDate = new DateTime(2024, 1, 1, 10, 0, 0).ToUniversalTime(), // 2024-01-01 10:00:00
+                 UpdatedDate = new DateTime(2024, 1, 1, 10, 0, 0).ToUniversalTime()
                  },
                  new Category
                  {
                      Id = 2,
                      Name = "Gönüllüler",  // Kategorinin adı
-                     CreatedDate = new DateTime(2024, 1, 1, 10, 0, 0), // 2024-01-01 10:00:00
-                     UpdatedDate = new DateTime(2024, 1, 1, 10, 0, 0),
+                     CreatedDate = new DateTime(2024, 1, 1, 10, 0, 0).ToUniversalTime(), // 2024-01-01 10:00:00
+                     UpdatedDate = new DateTime(2024, 1, 1, 10, 0, 0).ToUniversalTime(),
                      IsDeleted = false,
                  }
              );

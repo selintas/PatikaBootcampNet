@@ -1,0 +1,29 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>İlk MVC Uygulamam</title>
+    <link href="~/css/butarzbenim.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>İlk MVC Uygulamam</h1>
+    </header>
+
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Anasayfa</a> |
+        <a asp-controller="Yasam" asp-action="Index">Yaşam</a> |
+        <a asp-controller="Home" asp-action="Privacy">Gizlilik</a>
+    </nav>
+
+    <hr />
+
+    @RenderBody()
+
+    <hr />
+    <footer>
+        Her hakkı saklıdır &copy; @DateTime.Now.Year
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿﻿@@model List<Hobi>
+
+@{
+    // Layout = null;
+}
+
+
+<h1>Yaşamak Güzeldir</h1>
+
+<p>Bugün geriye kalan ömrünün ilk günü. Ona göre güzel yaşa!</p>
+
+<p>
+    Bugünün tarihi @DateTime.Today.ToShortDateString()
+</p>
+
+<h2>Hobilerim (@Model.Count)</h2>
+
+<ul>
+    @foreach (Hobi hobi in Model)
+    {
+        <li>@hobi.Ad (@hobi.Derece/5)</li>
+    }
+</ul>
+
+<hr />
+
+<p>
+    <em>&ldquo;@ViewBag.Cumle&rdquo;</em>
+</p>

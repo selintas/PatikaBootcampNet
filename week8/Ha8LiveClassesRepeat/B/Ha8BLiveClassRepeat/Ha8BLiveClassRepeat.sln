@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00A7B084-EBAC-43C2-B748-4FD9093ED6EF}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IlkMvcUygulamam", "IlkMvcUygulamam\IlkMvcUygulamam.csproj", "{0C47E221-518A-4172-8BFB-0CEC8FF65670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C47E221-518A-4172-8BFB-0CEC8FF65670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C47E221-518A-4172-8BFB-0CEC8FF65670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C47E221-518A-4172-8BFB-0CEC8FF65670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C47E221-518A-4172-8BFB-0CEC8FF65670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDB8CE9C-82B4-48E3-8B39-43A523A0274B}
+	EndGlobalSection
+EndGlobal

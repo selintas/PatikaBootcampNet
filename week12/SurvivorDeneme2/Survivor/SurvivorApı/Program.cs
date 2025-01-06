@@ -4,9 +4,14 @@ using SurvivorApı.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container. 
+var connectionString = builder.Configuration.GetConnectionString("BaglantiCumlem");
+//var cs = builder.Configuration.GetConnectionString("BaglantıCümlem"); 
 
-var cs = builder.Configuration.GetConnectionString("BaglantıCümlem");
-builder.Services.AddDbContext<SurvivorDbContext>(builder => builder.UseNpgsql(cs));
+// DbContext'e bağlantı dizesini veriyoruz
+builder.Services.AddDbContext<SurvivorDbContext>(options =>
+    options.UseNpgsql(connectionString)
+);
+//builder.Services.AddDbContext<SurvivorDbContext>(builder => builder.UseNpgsql(cs));
 builder.Services.AddControllersWithViews();
 
 //builder.Services.AddControllers();

@@ -15,3 +15,6 @@ https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT
   "symbol": "BTCUSDT",
   "price": "104568.67000000"
 }
+
+-
+Post hiç kişi yoksa formulu ? ile

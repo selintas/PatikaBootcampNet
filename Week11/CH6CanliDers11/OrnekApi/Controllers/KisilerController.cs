@@ -38,7 +38,8 @@ namespace OrnekApi.Controllers
             // peki hiç kişi yoksa max metodu hata verir mi
             Kisi kisi = new Kisi()
             {
-                Id = Veri.Kisiler().Any() ? Veri.Kisiler().Max(k => k.Id) + 1 : 1,
+                Id = Veri.Kisiler().Any() ? Veri.Kisiler().Max(k => k.Id) + 1 : 1, // hıc kısı yoksa bu sekılde ekler
+
                 Ad = dto.Ad
             };
 

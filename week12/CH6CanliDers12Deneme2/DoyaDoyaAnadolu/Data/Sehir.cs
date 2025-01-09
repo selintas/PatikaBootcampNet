@@ -17,6 +17,6 @@ namespace DoyaDoyaAnadolu.Data
         public int BolgeId { get; set; }
 
 
-        public Bolge Bolge { get; set; } = null!;
+        public Bolge Bolge { get; set; } = null!; // null olması : null forgıvıng  operator
     }
 }

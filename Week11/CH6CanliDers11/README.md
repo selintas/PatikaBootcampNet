@@ -18,3 +18,5 @@ https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT
 
 -
 Post hiç kişi yoksa formulu ? ile
+_
+program.cs de izin vermek formul  - cors ile 

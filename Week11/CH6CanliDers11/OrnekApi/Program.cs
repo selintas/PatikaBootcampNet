@@ -5,7 +5,7 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy
         .AllowAnyHeader() // content-type..
         .AllowAnyMethod() // get, post, put, delete..
-        .AllowAnyOrigin() // herhangi bir adres
+        .AllowAnyOrigin() // herhangi bir adres // bunlar izin verir ayrıca altta CORS EKLENDI.
     )
 );
 builder.Services.AddControllers();

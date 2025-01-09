@@ -5,8 +5,9 @@ namespace DoyaDoyaAnadolu.Data
 {
     public class Sehir
     {
+        // bu sehir için ıd nın otomatık artmasını engeller.
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Id { get; set; }
+        public int Id { get; set; } 
 
         [MaxLength(50)]
         public string SehirAd { get; set; } = "";

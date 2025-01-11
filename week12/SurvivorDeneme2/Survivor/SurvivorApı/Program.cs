@@ -32,6 +32,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseDefaultFiles(); // default açýlacak dosya: index.html
+app.UseStaticFiles(); // wwwroot halka açýk
+
+
 app.MapControllers();
 
 app.Run();
